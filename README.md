@@ -6,7 +6,9 @@
 The administrative control center for the **ESN UniPi Portal**. This application allows administrators to manage dynamic content, including news updates, event scheduling, and user submissions, providing a seamless bridge between the database and the public-facing portal.
 
 ![ESN UniPi](images/1.PNG)
-![ESN UniPi](images/2.PNG)
+![ESN UniPi](images/12.PNG)
+![ESN UniPi](images/13.PNG)
+![ESN UniPi](images/14.PNG)
 
 ## ✨ Core Features
 
