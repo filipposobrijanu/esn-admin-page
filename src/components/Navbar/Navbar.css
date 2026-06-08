@@ -1,0 +1,652 @@
+/* ===== ENHANCED FADE ANIMATIONS ===== */
+
+/* Main navbar entrance animation */
+.navbar {
+  animation: navbarSlideDown 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes navbarSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Staggered fade-in for nav items */
+.nav-item {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Stagger animation delays */
+.nav-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.nav-item:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.nav-item:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.nav-item:nth-child(4) {
+  animation-delay: 0.25s;
+}
+.nav-item:nth-child(5) {
+  animation-delay: 0.3s;
+}
+.nav-item:nth-child(6) {
+  animation-delay: 0.35s;
+}
+.nav-item:nth-child(7) {
+  animation-delay: 0.4s;
+}
+.nav-item:nth-child(8) {
+  animation-delay: 0.45s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced dropdown animations */
+.dropdown-menu {
+  animation: dropdownFadeIn 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Enhanced social button animations */
+#ig_but,
+#tiktok_but,
+#fb_but {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#ig_but::before,
+#tiktok_but::before,
+#fb_but::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+#ig_but:hover::before,
+#tiktok_but:hover::before,
+#fb_but:hover::before {
+  left: 100%;
+}
+
+/* Color bar animation */
+.color-bar-container {
+  animation: colorBarSlide 0.8s ease-out 0.2s both;
+}
+
+@keyframes colorBarSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced mobile menu animations */
+@media (max-width: 1600px) {
+  .nav-menu-visible {
+    animation: mobileMenuSlide 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  @keyframes mobileMenuSlide {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Language dropdown specific animations */
+.navbar .d-flex .nav-item.dropdown .dropdown-menu {
+  animation: languageDropdownFade 0.25s ease-out !important;
+}
+
+@keyframes languageDropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-5px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced focus states with animations */
+.dropdown-toggle:focus-visible,
+.dropdown-toggle1:focus-visible {
+  animation: gentlePulse 0.3s ease;
+}
+
+@keyframes gentlePulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+/* Loading animation for brand logo */
+.navbar-brand img {
+  filter: saturate(0);
+  animation: gentleFadeIn 0.8s ease-out;
+}
+
+@keyframes gentleFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.main-nav-bg {
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid #e0e0e0;
+}
+
+* {
+  z-index: 2;
+}
+
+.content {
+  padding-top: 95px;
+}
+
+li span,
+button,
+a {
+  transition: all 0.1s ease;
+}
+
+.li span:hover a:hover {
+  filter: drop-shadow(0 0 0.5rem #e0e0e0) !important;
+  transition: all 0.05s ease;
+}
+
+#social_div {
+  display: flex !important;
+}
+#social_div2 {
+  display: none !important;
+}
+
+.link-text {
+  display: inline-block;
+  transition: all 0.1s ease;
+}
+
+.link-text:hover {
+  transform: scale(1.075);
+  transition: all 0.05s ease;
+}
+
+li button {
+  transition: all 0.1s ease;
+}
+
+li button:hover {
+  filter: none !important;
+  filter: brightness(0.9) !important;
+  transition: all 0.05s ease;
+}
+
+.navbar-brand:hover {
+  filter: saturate(0);
+  filter: none !important;
+}
+
+.navbar {
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.089);
+  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navbar .container-fluid {
+  max-width: 1550px;
+  margin: 0 auto;
+}
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#discor-btn {
+  display: block !important;
+}
+
+.dropdown-toggle {
+  background: rgb(224, 224, 224);
+  border: 0px solid #b34dee;
+}
+
+.dropdown-toggle1 {
+  border: 0px solid #b34dee;
+}
+
+.dropdown-menu {
+  background: rgb(255, 255, 255);
+  border: 0px solid #b34dee;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+}
+
+.dropdown-item {
+  color: black;
+  transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background: rgba(17, 17, 17, 0.116);
+  color: black;
+}
+
+/* Fix dropdown focus issues */
+.dropdown-toggle:focus,
+.dropdown-toggle1:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+/* Ensure dropdowns close when clicking elsewhere */
+.dropdown-menu.show {
+  z-index: 1000;
+}
+
+.nav-dropdown {
+  display: none !important;
+}
+
+.nav-dropdown.btn-light:hover,
+.nav-dropdown.btn-light:focus {
+  background-color: #f8f9fa !important;
+  border-color: #f8f9fa !important;
+  color: black !important;
+  opacity: 1 !important;
+}
+
+/* Enhanced responsive design */
+/* Enhanced responsive design */
+@media (max-width: 1600px) {
+  .main-nav-bg {
+    border-bottom: none;
+  }
+  .nav-item button {
+    text-align: start;
+    font-size: 1.1em;
+  }
+  .nav-dropdown {
+    display: block !important;
+  }
+
+  .nav-menu {
+    display: none !important;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-menu-visible {
+    display: flex !important;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .navbar-nav {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px 10px !important;
+    top: 100%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    background: white;
+    margin: 0;
+  }
+
+  .nav-menu-visible.navbar-nav {
+    opacity: 1;
+    border-bottom: 1px solid #e0e0e0;
+    transform: translateY(0);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.089);
+    pointer-events: all;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-item button {
+    width: 100%;
+    justify-content: flex-start !important;
+  }
+
+  .navbar-height {
+    height: auto !important;
+    align-items: flex-start;
+    transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .navbar-nav {
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    padding-right: 150px !important;
+    gap: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    padding-right: 100px !important;
+    gap: 3px;
+  }
+
+  .container-fluid {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    padding-right: 50px !important;
+    gap: 2px;
+  }
+
+  .navbar-brand img {
+    filter: saturate(0);
+    width: 115px !important;
+  }
+
+  .d-flex.gap-2 {
+    gap: 8px !important;
+  }
+}
+
+/* Keyframe animations */
+@keyframes slideInNav {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navbar-toggler {
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler:hover {
+  transform: scale(1.1);
+}
+
+/* Backdrop blur effect when menu is open */
+@media (max-width: 640px) {
+  .navbar-height::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+  }
+
+  .navbar-height.nav-menu-visible::before {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  #social_div {
+    display: none !important;
+  }
+  #social_div2 {
+    display: flex !important;
+  }
+}
+
+/* Color bar styles - equal distribution */
+.color-bar-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+
+.color-bar {
+  background-color: white;
+  display: flex;
+  height: 5px;
+  width: 1350px;
+  justify-content: space-between; /* Evenly distributes the blocks */
+}
+.navbar-brand {
+  filter: saturate(0);
+}
+.color-block {
+  width: 77.5px; /* Fixed width for each block */
+  flex-shrink: 0;
+}
+
+.blue {
+  background-color: #9e9e9e;
+}
+.pink {
+  background-color: #3a3a3a;
+}
+.green {
+  background-color: #9e9e9e;
+}
+.orange {
+  background-color: #3a3a3a;
+}
+
+#fb_but,
+#tikkok_but,
+#ig_but,
+.dropdown-toggle {
+  display: block;
+  transition: all 0.2s ease;
+}
+
+#ig_but:hover {
+  filter: drop-shadow(0 0 0.3rem #e6007bad) !important;
+  transition: all 0.15s ease;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+  transition: all 0.15s ease;
+}
+.dropdown-toggle:focus {
+  background-color: #e0e0e0 !important;
+  color: black !important;
+  transition: all 0.15s ease;
+}
+.dropdown-toggle1:focus {
+  background-color: #7ac142 !important;
+  color: white !important;
+  transition: all 0.15s ease;
+}
+
+#tiktok_but:hover {
+  filter: drop-shadow(0 0 0.3rem #0d0d0da4) !important;
+  transition: all 0.15s ease;
+}
+
+#fb_but:hover {
+  filter: drop-shadow(0 0 0.3rem #0061e8a4) !important;
+  transition: all 0.15s ease;
+}
+
+/* Fix for dropdown focus issues */
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Ensure proper dropdown behavior */
+.dropdown-item:focus {
+  background-color: transparent;
+}
+/* Enhanced dropdown hover behavior */
+/* Enhanced dropdown hover behavior */
+/* Enhanced dropdown hover behavior */
+@media (min-width: 1600px) {
+  .nav-item.dropdown {
+    position: relative;
+  }
+
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block !important;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: all;
+  }
+
+  /* Style for ALL dropdown toggles on hover */
+  .nav-item.dropdown:hover .dropdown-toggle1 {
+    background-color: #7ac142 !important;
+    color: white !important;
+    transition: all 0.15s ease;
+  }
+  .nav-item.dropdown:hover .dropdown-toggle {
+    background-color: #e0e0e0 !important;
+    color: black !important;
+    transition: all 0.15s ease;
+  }
+
+  /* Keep style when dropdown menu is hovered */
+  .dropdown-menu:hover ~ .dropdown-toggle1,
+  .dropdown-menu:hover ~ .dropdown-toggle {
+    background-color: #7ac142 !important;
+    color: white !important;
+  }
+
+  .dropdown-menu {
+    display: block !important;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(7.5px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+  }
+
+  .dropdown-menu:hover {
+    display: block !important;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+
+  /* Fix for dropdown-menu-start positioning */
+  .dropdown-menu.dropdown-menu-start {
+    right: auto !important;
+    left: 0 !important;
+  }
+
+  .dropdown-menu.dropdown-menu-end {
+    right: 0 !important;
+    left: auto !important;
+  }
+
+  /* Language dropdown specific styling to match others */
+  .navbar .d-flex .nav-item.dropdown .dropdown-menu {
+    background-color: #f8f9fa !important;
+    border: 0px solid #b34dee;
+    color: black !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+    margin-top: 0;
+  }
+
+  /* Style language dropdown items to match */
+  .navbar .d-flex .nav-item.dropdown .dropdown-item {
+    color: black !important;
+    transition: all 0.2s ease;
+  }
+
+  .navbar .d-flex .nav-item.dropdown .dropdown-item:hover {
+    color: black !important;
+  }
+}
+
+/* Fix focus issues for both toggle classes */
+.dropdown-toggle1:focus,
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}

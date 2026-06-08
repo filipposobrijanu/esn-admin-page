@@ -1,0 +1,56 @@
+/* Import families from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:wght@400;700&family=Inter:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/* Poppins (Latin) */
+@font-face {
+  font-family: "CustomFont";
+  src: local("Poppins");
+  font-style: normal;
+  font-weight: 100 900;
+  unicode-range: U+0020-007F; /* Basic Latin */
+}
+
+/* Noto Sans (Greek) */
+@font-face {
+  font-family: "CustomFont";
+  src: local("Noto Sans");
+  font-style: normal;
+  font-weight: 400 700;
+  unicode-range: U+0370-03FF, U+1F00-1FFF; /* Greek + Greek Extended */
+}
+
+/* Inter (Cyrillic: Russian + Moldovan) */
+@font-face {
+  font-family: "CustomFont";
+  src: local("Inter");
+  font-style: normal;
+  font-weight: 400 700;
+  unicode-range: U+0400-04FF, U+0500-052F; /* Cyrillic + Cyrillic Supplement */
+}
+
+* {
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: rgb(247, 247, 247);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "CustomFont", "Poppins", "Noto Sans", "Inter", sans-serif;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+input:focus {
+  border: none;
+  outline: none;
+}
+::selection {
+  background-color: rgba(218, 218, 218, 0.659);
+  color: inherit;
+}

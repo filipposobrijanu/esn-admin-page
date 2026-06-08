@@ -1,0 +1,7 @@
+#side_but {
+  transition: all 0.1s ease;
+}
+#side_but:hover {
+  filter: brightness(0.5);
+  transition: all 0.2s ease;
+}
