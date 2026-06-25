@@ -15,16 +15,6 @@
 
 ---
 
-### Core Features
-
-* **Full-Lifecycle CRUD Synchronization:** Abstracted event and news controllers executing real-time data mutations, structural schema validation, and immediate propagation across the public-facing client layout.
-* **Centralized Input Audit Ledger:** Asynchronous workflow tables designed to monitor, filter, and track inbound user-generated applications from corporate entry vectors such as the "Join Us" and "Contact Us" forms.
-* **Asynchronous Media Pipelines:** Zero-overhead client-side image processing linking directly with the Cloudinary API to handle on-the-fly multi-part asset streaming, optimization, and remote cloud storage.
-* **Optimized Command Layout:** A clean, fixed-sidebar administrative UI built with high data density in mind, leveraging advanced layout primitives to ensure consistent performance for high-tempo moderation workflows.
-* **Secured API Session Gateway:** Fully decoupled layout configured to coordinate exclusively with protected backend routing states via isolated bearer token request headers.
-
----
-
 ### Production Tech Stack
 
 **Framework Architecture & View Engine**
