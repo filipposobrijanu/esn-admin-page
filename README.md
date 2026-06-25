@@ -1,8 +1,7 @@
 <h1 align="center">ESN UniPi Admin Dashboard</h1>
-<h3 align="center">Enterprise Content Management Panel & CRUD Orchestration Engine</h3>
 
 <p align="center">
-  The administrative control center for the <strong>ESN UniPi Portal</strong> ecosystem. This application functions as a high-fidelity internal back-office suite, empowering administrators to orchestrate dynamic content, manage multi-channel feedback lifecycles, and handle secure media mutations via a production-grade, state-driven control layout.
+  The administrative control center for the <strong>ESN UniPi Portal</strong> system. This application functions as an internal back-office suite, empowering administrators to orchestrate dynamic content, manage multi-channel feedback lifecycles, and handle secure media mutations via a production-grade, state-driven control layout.
 </p>
 
 <p align="center">
@@ -16,9 +15,9 @@
 
 ---
 
-### ✨ Core Features
+### Core Features
 
-* **Full-Lifecycle CRUD Orchestration:** Abstracted event and news controllers executing real-time data mutations, structural schema validation, and immediate propagation across the public-facing client layout.
+* **Full-Lifecycle CRUD Synchronization:** Abstracted event and news controllers executing real-time data mutations, structural schema validation, and immediate propagation across the public-facing client layout.
 * **Centralized Input Audit Ledger:** Asynchronous workflow tables designed to monitor, filter, and track inbound user-generated applications from corporate entry vectors such as the "Join Us" and "Contact Us" forms.
 * **Asynchronous Media Pipelines:** Zero-overhead client-side image processing linking directly with the Cloudinary API to handle on-the-fly multi-part asset streaming, optimization, and remote cloud storage.
 * **Optimized Command Layout:** A clean, fixed-sidebar administrative UI built with high data density in mind, leveraging advanced layout primitives to ensure consistent performance for high-tempo moderation workflows.
@@ -26,7 +25,7 @@
 
 ---
 
-### 🛠️ Production Tech Stack
+### Production Tech Stack
 
 **Framework Architecture & View Engine**
 <p align="left">
@@ -50,7 +49,7 @@
 
 ---
 
-### 📸 Administrative Showcase
+### Administrative Showcase
 
 <p align="center">
   <img src="images/1.PNG" width="48%" />
@@ -63,7 +62,7 @@
 
 ---
 
-### 🚀 Setup & Local Development
+### Setup & Local Development
 
 **1. Clone the repository:**
 ```bash
